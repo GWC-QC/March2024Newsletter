@@ -1,0 +1,55 @@
+# Define Morse code dictionary
+dict = {
+    'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....',
+    'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 'P': '.--.',
+    'Q': '--.-', 'R': '.-.', 'S': '...', 'T': '-', 'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-',
+    'Y': '-.--', 'Z': '--..',
+    '0': '-----', '1': '.----', '2': '..---', '3': '...--', '4': '....-', '5': '.....', '6': '-....',
+    '7': '--...', '8': '---..', '9': '----.',
+    ' ': '/'
+}
+
+# Function to encode text into Morse code
+def encode_morse(text):
+    morseString = ''
+    for char in text.upper():
+        if char in dict:
+            morseString += dict[char] + ' '
+        else:
+          morseString += ' '
+    return morseString.strip()
+
+# Function to decode Morse code into text
+def decode_morse(code):
+    text = ' '
+    code += ' '  # Add space to properly decode the last character
+    empty_string = ''
+    for symbol in code:
+        if symbol != ' ':
+            empty_string += symbol
+        else:
+            if empty_string in dict.values():
+                text += list(dict.keys())[list(dict.values()).index(empty_string)]
+            else:
+                text += ' '
+            empty_string = ''
+    return text
+
+# Main function
+def main():
+    print("Welcome to Morse Code Translator!")
+    while True:
+        choice = input("Choose an option:\n1. Encode text to Morse code\n2. Decode Morse code to text\n3. Quit\n")
+        if choice == '1':
+            text_encode = input("Enter text: ")
+            print("Morse Code:", encode_morse(text_encode))
+        elif choice == '2':
+            code_decode = input("Enter Morse code to decode: ")
+            print("Decoded Text:", decode_morse(code_decode))
+        elif choice == '3':
+            print("Thank you for using Morse Code Translator!")
+            break
+        else:
+            print("Invalid choice. Please choose again.")
+
+main()
