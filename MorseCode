@@ -47,7 +47,7 @@ def main():
             code_decode = input("Enter Morse code to decode: ")
             print("Decoded Text:", decode_morse(code_decode))
         elif choice == '3':
-            print("Thank you for using Morse Code Translator!")
+            print("Thank you for using Morse Code Encoder!")
             break
         else:
             print("Invalid choice. Please choose again.")
