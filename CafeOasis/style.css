@@ -1,0 +1,128 @@
+body {
+    font-family: "Jost", sans-serif;
+    background-color: #F9F7F0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+
+nav {
+    position: absolute;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 4vh 13.5vh;
+    padding: 0;
+    font-size: 2.3vh;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Tagline */
+
+.tagline {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/homepage-background.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    font-size: 4vh;
+    color: white;
+}
+
+/* Section 1 */
+
+section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 10vh;
+    margin: 10vh auto;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 3.5vh;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 2.7vh;
+}
+
+/* Menu */
+
+.menu {
+    flex-flow: column;
+}
+
+table {
+    justify-content: center;
+    border-collapse: collapse;
+}
+
+tr > td:nth-child(1) {
+    width: 275px;
+}
+
+tr > td:nth-child(2) {
+    width: 100px;
+    text-align: center;
+}
+
+table .sizes {
+    font-size: 14px;
+    border-bottom: 1px solid black;
+}
+
+table td {
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* Location and Hours  */
+
+.location-hours {
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 1fr;
+}
+
+.location-hours h2 {
+    grid-column: span 3;
+}
+
+.location-hours ul, .location-hours p {
+    list-style-type: none;
+    font-size: 1.8vh;
+}
+
+/* Footer */
+
+footer {
+    background-color: #2C3B2B;
+    color:white;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 13.5vh;
+    padding: 4vh 0;
+    font-size: 1.3vh;
+}
+
+footer .contact {
+    text-align: right;
+}
