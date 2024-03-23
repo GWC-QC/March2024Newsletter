@@ -19,12 +19,31 @@ nav ul {
     list-style-type: none;
     margin: 4vh 13.5vh;
     padding: 0;
-    font-size: 2.3vh;
+    font-size: 1.5em;
 }
 
 nav a {
     text-decoration: none;
     color: white;
+}
+
+.contact-link {
+    position: relative;
+}
+
+.contact-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+}
+
+.contact-link:hover::after {
+    background-color: #587656;
 }
 
 /* Tagline */
@@ -37,7 +56,7 @@ nav a {
     align-items: center;
     text-align: center;
     height: 100vh;
-    font-size: 4vh;
+    font-size: 2.5em;
     color: white;
 }
 
@@ -49,12 +68,12 @@ section .container {
     align-items: center;
     flex-flow: column;
     gap: 10vh;
-    margin: 10vh auto;
+    margin: 16.5vh auto;
 }
 
 .container h2 {
     text-align: center;
-    font-size: 3.5vh;
+    font-size: 2em;
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 2.7vh;
@@ -64,37 +83,44 @@ section .container {
 
 .menu {
     flex-flow: column;
+    width: 53.5vh;
 }
 
 table {
     justify-content: center;
     border-collapse: collapse;
+    width: 53.5vh;
 }
 
 tr > td:nth-child(1) {
-    width: 275px;
+    width: 30.2vh;
 }
 
 tr > td:nth-child(2) {
-    width: 100px;
+    width: 11vh;
+    text-align: center;
+}
+
+tr > td:nth-child(3) {
     text-align: center;
 }
 
 table .sizes {
-    font-size: 14px;
+    font-size: 0.875;
     border-bottom: 1px solid black;
 }
 
 table td {
-    font-size: 20px;
-    padding: 10px;
+    font-size: 1.25em;
+    padding: 1vh;
 }
 
 /* Location and Hours  */
 
 .location-hours {
     display: grid;
-    grid-template-columns: 1fr 0.3fr 1fr;
+    grid-template-columns: 1fr 0.3fr 0.6fr;
+    width: 53.5vh;
 }
 
 .location-hours h2 {
@@ -103,12 +129,19 @@ table td {
 
 .location-hours ul, .location-hours p {
     list-style-type: none;
-    font-size: 1.8vh;
+    font-size: 1.25em;
+    padding: 0;
+}
+
+.location-hours .hours {
+    text-align: right;
 }
 
 /* Footer */
 
-footer {
+footer .container {
+    display: flex;
+    justify-content: center;
     background-color: #2C3B2B;
     color:white;
 }
@@ -118,9 +151,10 @@ footer ul {
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
+    width: 100%;
     margin: 0 13.5vh;
-    padding: 4vh 0;
-    font-size: 1.3vh;
+    padding: 5vh 0;
+    font-size: 0.875;
 }
 
 footer .contact {
