@@ -17,9 +17,9 @@ nav ul {
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-    margin: 4vh 13.5vh;
+    margin: 50px 150px;
     padding: 0;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 nav a {
@@ -67,8 +67,8 @@ section .container {
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    gap: 10vh;
-    margin: 16.5vh auto;
+    gap: 90px;
+    margin: 150px auto;
 }
 
 .container h2 {
@@ -76,28 +76,28 @@ section .container {
     font-size: 2em;
     font-weight: 500;
     margin-top: 0;
-    margin-bottom: 2.7vh;
+    margin-bottom: 25px;
 }
 
 /* Menu */
 
 .menu {
     flex-flow: column;
-    width: 53.5vh;
+    width: 550;
 }
 
 table {
     justify-content: center;
     border-collapse: collapse;
-    width: 53.5vh;
+    width: 550px;
 }
 
 tr > td:nth-child(1) {
-    width: 30.2vh;
+    width: 275px;
 }
 
 tr > td:nth-child(2) {
-    width: 11vh;
+    width: 100px;
     text-align: center;
 }
 
@@ -106,21 +106,21 @@ tr > td:nth-child(3) {
 }
 
 table .sizes {
-    font-size: 0.875;
+    font-size: 0.875em;
     border-bottom: 1px solid black;
 }
 
 table td {
     font-size: 1.25em;
-    padding: 1vh;
+    padding: 10px;
 }
 
 /* Location and Hours  */
 
 .location-hours {
     display: grid;
-    grid-template-columns: 1fr 0.3fr 0.6fr;
-    width: 53.5vh;
+    grid-template-columns: 1fr 0.2fr 0.6fr;
+    width: 550px;
 }
 
 .location-hours h2 {
@@ -129,7 +129,7 @@ table td {
 
 .location-hours ul, .location-hours p {
     list-style-type: none;
-    font-size: 1.25em;
+    font-size: 1em;
     padding: 0;
 }
 
@@ -152,9 +152,9 @@ footer ul {
     align-items: center;
     list-style-type: none;
     width: 100%;
-    margin: 0 13.5vh;
-    padding: 5vh 0;
-    font-size: 0.875em;
+    margin: 0 150px;
+    padding: 45px 0;
+    font-size: 0.6875em;
 }
 
 footer .contact {
