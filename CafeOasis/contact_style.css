@@ -21,9 +21,18 @@ nav ul {
     font-size: 1.25em;
 }
 
+nav li {
+    white-space: nowrap;
+}
+
 nav a {
     text-decoration: none;
     color: black;
+}
+
+.logo a:hover {
+    color: #587656;
+    transition: color 0.2s ease;
 }
 
 .contact-link {
@@ -126,6 +135,10 @@ footer ul {
     margin: 0 150px;
     padding: 45px 0;
     font-size: 0.6875em;
+}
+
+footer li {
+    white-space: nowrap;
 }
 
 footer .contact {
