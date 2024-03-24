@@ -83,13 +83,13 @@ section .container {
 
 .menu {
     flex-flow: column;
-    width: 550;
+    width: 525px;
 }
 
 table {
     justify-content: center;
     border-collapse: collapse;
-    width: 550px;
+    width: 525px;
 }
 
 tr > td:nth-child(1) {
@@ -120,7 +120,7 @@ table td {
 .location-hours {
     display: grid;
     grid-template-columns: 1fr 0.2fr 0.6fr;
-    width: 550px;
+    width: 525px;
 }
 
 .location-hours h2 {
